@@ -1,11 +1,11 @@
-'use strict';
+"use strict";
 
-const path = require('path');
+const path = require("path");
 
-const PATHS = {
-  src: path.resolve(__dirname, '../src'),
-  out: path.resolve(__dirname, '../out'),
+const Paths = {
+  src: path.resolve(__dirname, "../src"),
+  out: path.resolve(__dirname, "../out"),
 };
 
-module.exports = PATHS;
+module.exports = Paths;
  

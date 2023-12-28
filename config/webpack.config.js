@@ -3,14 +3,14 @@
 const { merge } = require('webpack-merge');
 
 const common = require('./webpack.common.js');
-const PATHS = require('./paths');
+const Paths = require('./paths');
 
 const config = merge(common, {
   entry: {
-    popup: PATHS.src + '/popup.tsx',
-    contentScript: PATHS.src + '/contentScript.tsx',
-    background: PATHS.src + '/background.tsx',
-    colors: PATHS.src + '/colors.tsx',
+    popup: Paths.src + '/popup.tsx',
+    contentScript: Paths.src + '/contentScript.tsx',
+    background: Paths.src + '/background.tsx',
+    colors: Paths.src + '/colors.tsx',
   },
 });
 

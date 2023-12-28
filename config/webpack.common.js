@@ -4,11 +4,11 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require("terser-webpack-plugin");
 
-const PATHS = require('./paths');
+const Paths = require('./paths');
 
 const common = {
   output: {
-    path: PATHS.out,
+    path: Paths.out,
     filename: '[name].js',
   },
   devtool: 'source-map',
