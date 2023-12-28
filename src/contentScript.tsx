@@ -1,4 +1,4 @@
-import { BubbleDataPoint, Chart, ChartConfiguration, ChartData, ChartDataset, ChartOptions, ChartType, LegendItem, Point, ScriptableLineSegmentContext, TooltipItem, registerables } from 'chart.js';
+import { Chart, ChartConfiguration, ChartData, ChartDataset, ChartOptions, ChartType, LegendItem, ScriptableLineSegmentContext, TooltipItem, registerables } from 'chart.js';
 
 // Constants
 const serverUrl = 'https://www.despair.services';
