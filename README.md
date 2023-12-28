@@ -22,6 +22,9 @@
   <a href="https://www.chartjs.org/"><img alt="Chart.js" src="https://img.shields.io/badge/Chart.js-v4.4.1-blue?logo=chart.js"></a>
   <a href="https://webpack.js.org/"><img alt="Webpack" src="https://img.shields.io/badge/Webpack-v5.89.0-blue?logo=webpack"></a>
 </div>
+<div align="center">
+  <a href="https://app.codacy.com/gh/DespairServices/unity-asset-store-price-tracker/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade"><img alt="Codacy Badge" src="https://app.codacy.com/project/badge/Grade/a3b5a2bddbd445a58e73d15ecc3c4076"></a>
+</div>
 <hr>
 
 <!-- PROJECT SHOWCASE -->
