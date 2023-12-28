@@ -6,24 +6,17 @@ chrome.runtime.onUpdateAvailable.addListener(() => {
   chrome.runtime.reload();
 });
 
-chrome.runtime.onMessage.addListener((request, _sender, sendResponse) => {
+chrome.runtime.onMessage.addListener((request, _sender, sendResponse: (response: { ok: boolean, content: string }) => void) => {
   if (request.type === 'fetch') {
-    handleFetchMessage(request.content).then(sendResponse);
+    handleFetchMessage(request.content)
+    .then(sendResponse);
   }
   return true;
 });
 
 // Functions
-const handleFetchMessage = async (content: any) => {
+const handleFetchMessage = async (content: any): Promise<{ ok: boolean, content: string }> => {
   const sanitizedContent = sanitizeUrl(content);
   const response = await fetch(sanitizedContent);
-  if (response.status !== 200) {
-    return { ok: false, content: await response.text() };
-  } else {
-    try {
-      return { ok: true, content: await response.json() };
-    } catch (error) {
-      return { ok: false, content: 'Error 2000' };
-    }
-  }
+  return response.status === 200 ? { ok: true, content: await response.text() } : { ok: false, content: 'Error 2000' };
 };

@@ -1,4 +1,4 @@
-import { Chart, ChartConfiguration, ChartData, ChartDataset, ChartOptions, ChartType, LegendItem, ScriptableLineSegmentContext, TooltipItem, registerables } from 'chart.js';
+import { BubbleDataPoint, Chart, ChartConfiguration, ChartData, ChartDataset, ChartOptions, ChartType, LegendItem, Point, ScriptableLineSegmentContext, TooltipItem, registerables } from 'chart.js';
 
 // Constants
 const serverUrl = 'https://www.despair.services';
@@ -72,40 +72,43 @@ function start() {
   if (assetNameEncoded === undefined || assetNameEncoded === null) throw Error('Error 5003');
 
   const request = { type: 'fetch', content: `${serverUrl}/api/unity-asset-store-price-tracker?name=${assetNameEncoded}` };
-  chrome.runtime.sendMessage(request, response => {
+  chrome.runtime.sendMessage(request, function (response: { ok: boolean, content: string }) {
     const ok = response.ok;
     const content = response.content;
     if (!ok) throw Error(content);
 
+    const parsedContent: { x: string, y: string }[] = JSON.parse(content);
+
     const now = new Date();
     const nowParsed = now.toISOString().split('T')[0];
 
-    content.push({ x: nowParsed, y: content[content.length - 1]['y'] });
+    parsedContent.push({ x: nowParsed, y: parsedContent[parsedContent.length - 1].y });
     
-    const chartLabels = [];
-    for (let i = 0; i < content.length; i++) {
-      chartLabels.push(content[i]['x']);
+    const chartLabels: string[] = [];
+    for (let i = 0; i < parsedContent.length; i++) {
+      chartLabels.push(parsedContent[i].x);
     }
 
-    const dataFirst = content.map((o: any) => o['y']);
+    const dataFirst = parsedContent.map((o: any) => o.y);
     dataMin = Math.min(...dataFirst);
     dataMax = Math.max(...dataFirst);
 
-    var data = [];
-    for (let i = 0; i < content.length; i++) {
-      data.push(content[i]);
-      if (i < content.length - 1) {
-        var stepData = { x: content[i]['x'], y: content[i + 1]['y']};
-        if (JSON.stringify(content[i]) !== JSON.stringify(stepData)) {
+    var data: { x: string, y: string }[] = [];
+    for (let i = 0; i < parsedContent.length; i++) {
+      data.push(parsedContent[i]);
+      if (i < parsedContent.length - 1) {
+        var stepData = { x: parsedContent[i].x, y: parsedContent[i + 1].y };
+        if (JSON.stringify(parsedContent[i]) !== JSON.stringify(stepData)) {
           data.push(stepData);
         }
       } 
     }
+    const dataPlain: { x: any, y: any }[] = data.map(value => value);
 
     const chartDatasets: ChartDataset[] = [
       {
         label: 'Price',
-        data: data,
+        data: dataPlain,
         borderColor: priceColor,
         stepped: true,
         segment: {
