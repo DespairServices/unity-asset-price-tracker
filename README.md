@@ -16,8 +16,8 @@
 <!-- PROJECT SHIELDS -->
 <hr>
 <div align="center">
-  <a href="https://assetstore.unity.com/"><img alt="Unity Asset Store" src="https://img.shields.io/badge/TypeScript-v5.3.3-blue?logo=typescript"></a>
-  <a href="https://chromewebstore.google.com/"><img alt="Chrome Web Store" src="https://img.shields.io/badge/Unity%20Asset%20Store-gray?logo=google%20chrome"></a>
+  <a href="https://assetstore.unity.com/"><img alt="Unity Asset Store" src="https://img.shields.io/badge/Unity%20Asset%20Store-gray?logo=unity"></a>
+  <a href="https://chromewebstore.google.com/"><img alt="Chrome Web Store" src="https://img.shields.io/badge/Chrome%20Web%20Store-gray?logo=google%20chrome"></a>
 </div>
 <div align="center">
   <a href="https://www.typescriptlang.org/"><img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-v5.3.3-blue?logo=typescript"></a>
