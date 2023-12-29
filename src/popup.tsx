@@ -40,7 +40,7 @@ function updateValue(key: any, value: any) {
 }
 
 function updateColor(key: any, value: any) { 
-  var color = value ? colorGreen : colorRed
+  let color = value ? colorGreen : colorRed
   $('#' + key + ' svg').attr('fill', color)
 }
 

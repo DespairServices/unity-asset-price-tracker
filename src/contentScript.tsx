@@ -4,16 +4,16 @@ import { Chart, ChartConfiguration, ChartData, ChartDataset, ChartOptions, Chart
 const serverUrl = 'https://www.despair.services'
 
 // Variables
-var dataMin: number
-var dataMax: number
-var chartConfig: ChartConfiguration
+let dataMin: number
+let dataMax: number
+let chartConfig: ChartConfiguration
 
-var enable: boolean
-var priceColor: string
-var gapColor: string
-var minimumColor: string
-var intermediateColor: string
-var maximumColor: string
+let enable: boolean
+let priceColor: string
+let gapColor: string
+let minimumColor: string
+let intermediateColor: string
+let maximumColor: string
 
 // Functions
 function getUnityDisplay(): Element | null {
@@ -85,19 +85,19 @@ function start() {
     parsedContent.push({ x: nowParsed, y: parsedContent[parsedContent.length - 1].y })
     
     const chartLabels: string[] = []
-    for (let i = 0; i < parsedContent.length; i++) {
-      chartLabels.push(parsedContent[i].x)
+    for (const element of parsedContent) {
+      chartLabels.push(element.x)
     }
 
     const dataFirst = parsedContent.map((o: any) => o.y)
     dataMin = Math.min(...dataFirst)
     dataMax = Math.max(...dataFirst)
 
-    var data: { x: string, y: string }[] = []
+    let data: { x: string, y: string }[] = []
     for (let i = 0; i < parsedContent.length; i++) {
       data.push(parsedContent[i])
       if (i < parsedContent.length - 1) {
-        var stepData = { x: parsedContent[i].x, y: parsedContent[i + 1].y }
+        let stepData = { x: parsedContent[i].x, y: parsedContent[i + 1].y }
         if (JSON.stringify(parsedContent[i]) !== JSON.stringify(stepData)) {
           data.push(stepData)
         }
