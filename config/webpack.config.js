@@ -1,17 +1,76 @@
-'use strict';
+'use strict'
 
-const { merge } = require('webpack-merge');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const path = require('path')
+const TerserPlugin = require('terser-webpack-plugin')
 
-const common = require('./webpack.common.js');
-const PATHS = require('./paths');
+const paths = {
+  src: path.resolve(__dirname, '../src'),
+  out: path.resolve(__dirname, '../out'),
+}
 
-const config = merge(common, {
+const config = {
   entry: {
-    popup: PATHS.src + '/popup.tsx',
-    contentScript: PATHS.src + '/contentScript.tsx',
-    background: PATHS.src + '/background.tsx',
-    colors: PATHS.src + '/colors.tsx',
+    popup: paths.src + '/popup.tsx',
+    contentScript: paths.src + '/contentScript.tsx',
+    background: paths.src + '/background.tsx',
+    colors: paths.src + '/colors.tsx',
   },
-});
+  output: {
+    path: paths.out,
+    filename: '[name].js',
+  },
+  devtool: 'source-map',
+  stats: {
+    all: false,
+    errors: true,
+    builtAt: true,
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'images',
+              name: '[name].[ext]',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.ts(x)?$/,
+        loader: 'ts-loader',
+      },
+    ],
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
+  },
+  plugins: [
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: '**/*',
+          context: 'public',
+        },
+      ],
+    }),
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+    }),
+  ],
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin()],
+  },
+}
 
-module.exports = config;
+module.exports = config

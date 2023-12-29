@@ -22,9 +22,6 @@
   <a href="https://www.chartjs.org/"><img alt="Chart.js" src="https://img.shields.io/badge/Chart.js-v4.4.1-blue?logo=chart.js"></a>
   <a href="https://webpack.js.org/"><img alt="Webpack" src="https://img.shields.io/badge/Webpack-v5.89.0-blue?logo=webpack"></a>
 </div>
-<div align="center">
-  <a href="https://app.codacy.com/gh/DespairServices/unity-asset-store-price-tracker/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade"><img alt="Codacy Badge" src="https://app.codacy.com/project/badge/Grade/a3b5a2bddbd445a58e73d15ecc3c4076"></a>
-</div>
 <hr>
 
 <!-- PROJECT SHOWCASE -->
@@ -43,9 +40,9 @@ With that in mind, this chrome extension fetches and displays pricing history on
 <!-- USAGE -->
 ## Usage
 
-1. Install the Chrome extension from the Chrome Web Store
-2. Modify the settings to your liking
-3. Navigate to the Unity Asset Store
+1.  Install the Chrome extension from the Chrome Web Store
+2.  Modify the settings to your liking
+3.  Navigate to the Unity Asset Store
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -57,6 +54,6 @@ Any contributions you make are **greatly appreciated**.
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [Chrome Extension CLI](https://github.com/dutiyesh/chrome-extension-cli) for project bootstrap
-* [Bootstrap Icons](https://icons.getbootstrap.com/) for icons
-* [Shields.io](https://shields.io/) for badges
+*   [Chrome Extension CLI](https://github.com/dutiyesh/chrome-extension-cli) for project bootstrap
+*   [Bootstrap Icons](https://icons.getbootstrap.com/) for icons
+*   [Shields.io](https://shields.io/) for badges
