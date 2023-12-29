@@ -43,9 +43,9 @@ With that in mind, this chrome extension fetches and displays pricing history on
 <!-- USAGE -->
 ## Usage
 
- 1. Install the Chrome extension from the Chrome Web Store
- 2. Modify the settings to your liking
- 3. Navigate to the Unity Asset Store
+1.  Install the Chrome extension from the Chrome Web Store
+2.  Modify the settings to your liking
+3.  Navigate to the Unity Asset Store
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -57,6 +57,6 @@ Any contributions you make are **greatly appreciated**.
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-  * [Chrome Extension CLI](https://github.com/dutiyesh/chrome-extension-cli) for project bootstrap
-  * [Bootstrap Icons](https://icons.getbootstrap.com/) for icons
-  * [Shields.io](https://shields.io/) for badges
+*   [Chrome Extension CLI](https://github.com/dutiyesh/chrome-extension-cli) for project bootstrap
+*   [Bootstrap Icons](https://icons.getbootstrap.com/) for icons
+*   [Shields.io](https://shields.io/) for badges
