@@ -1,5 +1,4 @@
 <!-- PROJECT LOGO -->
-<br>
 <div align="center">
   <img src="private/logo.png" alt="Logo" width="124" height="124">
   <h2>Unity Asset Store Price Tracker</h3>
