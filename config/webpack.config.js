@@ -52,7 +52,7 @@ const config = {
     ],
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js",],
+    extensions: [".tsx", ".ts", ".js"],
   },
   plugins: [
     new CopyWebpackPlugin({
