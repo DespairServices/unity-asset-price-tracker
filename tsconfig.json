@@ -6,7 +6,6 @@
     "outDir": "out",
     "sourceMap": true,
     "jsx": "react",
-    "target": "es6",
-    "esModuleInterop": true
+    "target": "es6"
   }
 }
