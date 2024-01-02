@@ -195,7 +195,7 @@ function start() {
     };
     
     setInterval(display, 500);
-  })
+  });
 };
 
 async function init() {
