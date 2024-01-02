@@ -1,7 +1,7 @@
 {
-  "name": "unity-asset-store-price-tracker",
-  "version": "1.0.1",
-  "description": "This extension lets you view pricing history for Unity assets on site",
+  "name": "unity-asset-price-tracker",
+  "version": "1.0.2",
+  "description": "This extension lets you view pricing history for Unity assets on site.",
   "private": true,
   "scripts": {
     "build": "rimraf out/* --glob && node ./node_modules/webpack/bin/webpack.js --env production --config config/webpack.config.js && cd out/ && bestzip %npm_package_name%_v%npm_package_version%.zip *",
