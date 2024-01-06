@@ -33,6 +33,12 @@ $("#reset").on("click", function() {
   setChromeStorageValue("intermediateColor", colorYellow, updateValue);
   setChromeStorageValue("maximumColor", colorRed, updateValue);
 });
+$("#website").on("click", function() {
+  console.log("YES")
+  chrome.tabs.create({
+    url: "https://www.despair.services"
+  });
+});
 
 // Functions
 function updateValue(key: any, value: any) { 

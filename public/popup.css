@@ -12,6 +12,9 @@ body {
   width: 350px;
 	border-style: solid;
 }
+code {
+  cursor: pointer;
+}
 
 .form-control-color {
 	width: 100%;
