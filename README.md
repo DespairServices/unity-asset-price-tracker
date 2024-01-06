@@ -29,9 +29,10 @@
 
 <!-- PROJECT SHOWCASE -->
 <div align="center">
-  <img alt="Showcase Dark" src="private/showcase-dark.png">
-  <img alt="Showcase Light" src="private/showcase-light.png">
-  <img alt="Showcase Graph" src="private/showcase-graph.png">
+  <img alt="Showcase Menu Dark" src="private/showcase-menu-dark.png">
+  <img alt="Showcase Menu Light" src="private/showcase-menu-light.png">
+  <img alt="Showcase Graph Dark" src="private/showcase-graph-dark.png">
+  <img alt="Showcase Graph Light" src="private/showcase-graph-light.png">
 </div>
 
 <!-- ABOUT THE PROJECT -->
