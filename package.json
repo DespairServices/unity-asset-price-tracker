@@ -22,7 +22,12 @@
     "javascript-obfuscator": "^4.1.0",
     "json-minimizer-webpack-plugin": "^4.0.0",
     "mini-css-extract-plugin": "^2.7.6",
+    "postcss": "^8.4.33",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-loader": "^7.3.4",
+    "postcss-preset-env": "^9.3.0",
     "sharp": "^0.33.1",
+    "style-loader": "^3.3.3",
     "terser-webpack-plugin": "^5.3.9",
     "ts-loader": "^9.5.1",
     "typescript": "^5.3.3",
@@ -38,5 +43,8 @@
     "chart.js": "^4.4.1",
     "jquery": "^3.7.1",
     "rimraf": "^5.0.5"
-  }
+  },
+  "browserslist": [
+    ">0%"
+  ]
 }

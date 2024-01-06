@@ -32,7 +32,7 @@ const config = function(env, argv) {
       rules: [
         {
           test: /\.css$/i,
-          use: [MiniCssExtractPlugin.loader, "css-loader"],
+          use: [MiniCssExtractPlugin.loader, "style-loader", "css-loader", "postcss-loader"],
         },
         {
           test: /\.html$/i,
