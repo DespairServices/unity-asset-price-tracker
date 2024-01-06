@@ -1,6 +1,6 @@
 {
   "name": "unity-asset-price-tracker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This extension lets you view pricing history for Unity assets on site.",
   "private": true,
   "scripts": {
