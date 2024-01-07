@@ -1,6 +1,6 @@
 <!-- PROJECT LOGO -->
 <div align="center">
-  <img src="private/logo.png" alt="Logo" width="124" height="124">
+  <img src="private/logo.png" alt="Logo" width="128" height="128">
   <h2>Unity Asset Price Tracker</h3>
   <p>A chrome extension that lets you view pricing history for Unity assets</p>
   <div>
