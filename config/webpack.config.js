@@ -8,7 +8,6 @@ const JsonMinimizerPlugin = require("json-minimizer-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 const TerserPlugin = require("terser-webpack-plugin");
-const WebpackObfuscator = require("webpack-obfuscator");
 
 const paths = {
   src: path.resolve(__dirname, "../src"),
@@ -104,9 +103,6 @@ const config = function(env, argv) {
           },
         ],
       }),
-      new WebpackObfuscator({
-        rotateStringArray: true,
-      }, ["**.min.js"]),
     ],
     devtool: env.production ? false : "source-map",
     stats: {

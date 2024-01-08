@@ -1,6 +1,6 @@
 {
   "name": "unity-asset-price-tracker",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "This extension lets you view pricing history for Unity assets on site.",
   "private": true,
   "scripts": {
@@ -19,7 +19,6 @@
     "html-minimizer-webpack-plugin": "^4.4.0",
     "image-minimizer-webpack-plugin": "^3.8.3",
     "imagemin": "^8.0.1",
-    "javascript-obfuscator": "^4.1.0",
     "json-minimizer-webpack-plugin": "^4.0.0",
     "mini-css-extract-plugin": "^2.7.6",
     "postcss": "^8.4.33",
@@ -33,8 +32,7 @@
     "typescript": "^5.3.3",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
-    "webpack-merge": "^5.10.0",
-    "webpack-obfuscator": "^3.5.1"
+    "webpack-merge": "^5.10.0"
   },
   "dependencies": {
     "@braintree/sanitize-url": "^7.0.0",
