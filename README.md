@@ -44,7 +44,7 @@ With that in mind, this chrome extension fetches and displays pricing history on
 <!-- USAGE -->
 ## Usage
 
-1.  Install the Chrome extension from the Chrome Web Store
+1.  Install the [Chrome extension](https://chromewebstore.google.com/u/5/detail/unity-asset-price-tracker/ccpgohmmhpgljflpppknanelploafnjc) from the Chrome Web Store
 2.  Modify the settings to your liking
 3.  Navigate to the Unity Asset Store
 
