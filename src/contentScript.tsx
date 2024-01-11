@@ -2,6 +2,7 @@ import { Chart, ChartConfiguration, ChartData, ChartDataset, ChartOptions, Chart
 
 // Constants
 const serverUrl = "https://www.despair.services";
+const apiName = "unity-asset-price-tracker";
 
 // Variables
 let dataMin: number;
@@ -71,7 +72,7 @@ function start() {
   const assetNameEncoded = encodeURI(assetName);
   if (assetNameEncoded === undefined || assetNameEncoded === null) throw Error("Error 5003");
 
-  const request = { type: "fetch", content: `${serverUrl}/api/unity-asset-store-price-tracker?name=${assetNameEncoded}` };
+  const request = { type: "fetch", content: `${serverUrl}/api/${apiName}?name=${assetNameEncoded}` };
   chrome.runtime.sendMessage(request, function (response: { ok: boolean, content: string }) {
     const ok = response.ok;
     const content = response.content;
