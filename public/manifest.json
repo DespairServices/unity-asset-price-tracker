@@ -33,6 +33,6 @@
   ],
   "host_permissions": [
     "https://assetstore.unity.com/packages/*",
-    "https://www.despair.services/*"
+    "https://despair-services-backend.vercel.app/*"
   ]
 }

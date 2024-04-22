@@ -1,7 +1,7 @@
 import { Chart, ChartConfiguration, ChartData, ChartDataset, ChartOptions, ChartType, LegendItem, ScriptableLineSegmentContext, TooltipItem, registerables } from "chart.js";
 
 // Constants
-const serverUrl = "https://www.despair.services";
+const serverUrl = "https://despair-services-backend.vercel.app";
 const apiName = "unity-asset-price-tracker";
 
 // Variables
