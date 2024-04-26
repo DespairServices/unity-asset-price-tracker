@@ -52,7 +52,9 @@ With that in mind, this chrome extension fetches and displays pricing history on
 ## Contributing
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request.
+<br>
 You can also simply open an issue with the tag "enhancement".
+<br>
 Any contributions you make are **greatly appreciated**.
 
 <!-- ACKNOWLEDGMENTS -->
