@@ -39,7 +39,10 @@
 ## About The Project
 
 This project was made to remove the hassle of switching between the Unity Asset Store and any other site that tracks Unity asset pricing.
+<br>
 With that in mind, this chrome extension fetches and displays pricing history on the Unity Asset Store itself.
+<br>
+[Unity Asset Price Tracker](https://github.com/DespairServices/unity-asset-price-tracker/) has been archived, but is the precursor of [Asset Store Price Tracker](https://github.com/DespairServices/asset-store-price-tracker/).
 
 <!-- USAGE -->
 ## Usage
