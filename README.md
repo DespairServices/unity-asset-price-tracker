@@ -61,5 +61,6 @@ Any contributions you make are **greatly appreciated**.
 ## Acknowledgments
 
 *   [Chrome Extension CLI](https://github.com/dutiyesh/chrome-extension-cli) for project bootstrap
-*   [Bootstrap Icons](https://icons.getbootstrap.com/) for icons
-*   [Shields.io](https://shields.io/) for badges
+*   [Bootstrap Icons](https://icons.getbootstrap.com) for icons
+*   [Shields.io](https://shields.io) for badges
+*   [Canva](https://canva.com) for logo design
